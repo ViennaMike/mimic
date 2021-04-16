@@ -188,7 +188,7 @@ with xmlrpc.client.ServerProxy("http://192.168.88.184:8000") as proxy:
         controller.setTarget(motion_codes['nod'], pitch_cmd)
         controller.setTarget(motion_codes['pan'], yaw_cmd)
         eyes.move()
-        time.sleep(0.01)   # sleep for 1/10 of a second. Update to tune performance
+        time.sleep(0.02)   # sleep for 1/50 of a second. Update to tune performance
     
         # test code, remove for final    
         #print('roll:',roll)
