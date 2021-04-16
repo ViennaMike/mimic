@@ -1,5 +1,5 @@
 # mimic
-Raspberry Pi code for skull to copy movement of IMU sensor. Sensor and skull communicate wirelessly
+Raspberry Pi code for skull to copy movement of IMU sensor. Sensor and skull communicate wirelessly. By wearing a baseball cap with the sensor mounted on the brim, the operator's head motion is captured in realtime and sent to the skull, which mimics the operator's head movement. 
 ## Overview
 This project has two units, a sensor unit and a controller unit. The sensor unit consists of a [Raspberry Pi Zero W](https://www.raspberrypi.org/pi-zero-w/) and an [Adafruit BNO055](https://www.adafruit.com/product/2472) 9 degree of freedom IMU Board. The controller unit consists of another Pi Zero W and a [Pololu Maestro Servo Controller](https://www.pololu.com/category/102/maestro-usb-servo-controllers). 
 
