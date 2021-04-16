@@ -28,7 +28,7 @@ The imu_rpc_server.py program is similar to the test program, but it only reads 
 ## Controller
 The controller software runs on a different Pi, and consists of two programs: main_controller.py and maestro.py. Main_controller.py initializes the servo controller and sets limits on the speed and acceleration for the servos. I found this cuts down on the noise of the servos, provides smoother motion, and keeps the head from whipping around when turning. 
 
-The board queries the sensor Pi via XMLRPC ten times per second to get the position as a quaternion. It converts the quaternion into Euler angles and converts the Euler angles into servo commands and sends the servo commands to the Maestro board. It also generates a sequence of eye movements and sends that to the Maestro as well.
+The board queries the sensor Pi via XMLRPC fifty times per second to get the position as a quaternion. It converts the quaternion into Euler angles and converts the Euler angles into servo commands and sends the servo commands to the Maestro board. It also generates a sequence of eye movements and sends that to the Maestro as well.
 
 ManServoTest can be used as you set things up to make sure your controller Pi is talking to the Maestro correctly. 
 ## Use
